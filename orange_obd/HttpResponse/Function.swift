@@ -11,8 +11,7 @@ class Function{
     static let link="https://bento2.orange-electronic.com/App_Asmx/ToolApp.asmx"
     static func GetVersion(){
         let act=(UIApplication.shared.delegate as! AppDelegate).act!
-        let url = URL(string: "https://itunes.apple.com/lookup?bundleId=com.orange.txusb")!
-        
+        let url = URL(string: "https://itunes.apple.com/lookup?bundleId=com.orange.obd")!
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
             let DaS=String(data: data, encoding: .utf8)!

@@ -50,6 +50,7 @@ class ViewController: BleActivity{
         dowload_mmy()
         command.act=self
         Function.GetVersion()
+      
     }
     func dowload_mmy(){
         self.LoadIng(SetLan.Setlan("Data_Loading"))
@@ -129,5 +130,5 @@ class ViewController: BleActivity{
     override func Disconnect() {
         SetMenu(peacedefine().HomePage)
     }
+    
 }
-

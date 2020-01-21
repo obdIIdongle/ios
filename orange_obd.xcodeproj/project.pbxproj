@@ -23,7 +23,6 @@
 		100C665C232CB0E00055FD97 /* MyFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100C665B232CB0E00055FD97 /* MyFavorite.swift */; };
 		106A6FBD232CBCAD004D94FB /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A6FBC232CBCAD004D94FB /* Favorite.swift */; };
 		106A6FBF232CC5AB004D94FB /* AddFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A6FBE232CC5AB004D94FB /* AddFavorite.swift */; };
-		106A6FC1232F7707004D94FB /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106A6FC0232F7707004D94FB /* NetworkExtension.framework */; };
 		106A6FC4232FB153004D94FB /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A6FC3232FB153004D94FB /* Setting.swift */; };
 		106A6FC6232FB4E6004D94FB /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A6FC5232FB4E6004D94FB /* Update.swift */; };
 		106A6FC923339ABE004D94FB /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106A6FC823339ABE004D94FB /* Menu.storyboard */; };
@@ -75,7 +74,6 @@
 		10CA99AB236AD2F100E81B9B /* ID_Beans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA99AA236AD2F100E81B9B /* ID_Beans.swift */; };
 		10CA99AE236BC58D00E81B9B /* Change_Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA99AD236BC58D00E81B9B /* Change_Car.swift */; };
 		10CA99B0236BC64800E81B9B /* DialogPeace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA99AF236BC64800E81B9B /* DialogPeace.swift */; };
-		AC69C68044FC006959352B7D /* Pods_orange_obd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D230216B9F40EA7F95C876 /* Pods_orange_obd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,8 +158,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC69C68044FC006959352B7D /* Pods_orange_obd.framework in Frameworks */,
-				106A6FC1232F7707004D94FB /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +716,7 @@
 				CODE_SIGN_ENTITLEMENTS = orange_obd/orange_obd.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = HEQGGF6N89;
 				INFOPLIST_FILE = orange_obd/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -728,7 +724,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.orange.obd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -745,7 +741,7 @@
 				CODE_SIGN_ENTITLEMENTS = orange_obd/orange_obd.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = HEQGGF6N89;
 				INFOPLIST_FILE = orange_obd/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -753,7 +749,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.orange.obd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
