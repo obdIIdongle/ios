@@ -24,7 +24,7 @@ class SelectModel: UIViewController,UITableViewDataSource,UITableViewDelegate  {
         cell.b1.setTitle(it[place].modele, for: .normal)
         if(place+1<it.count){
             cell.b2.setTitle(it[place+1].modele, for: .normal)
-            cell.n2=it[place].modele
+            cell.n2=it[place+1].modele
             cell.b2.isHidden=false
         }else{
             cell.b2.isHidden=true

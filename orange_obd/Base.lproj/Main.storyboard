@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -415,7 +415,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uk2-k5-m8n">
                                 <rect key="frame" x="0.0" y="806" width="414" height="56"/>
-                                <color key="backgroundColor" red="0.073717825109999996" green="0.213145107" blue="0.3215825558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.21176470588235294" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="I44-wW-5f6"/>
                                 </constraints>
@@ -1221,10 +1221,10 @@ you local content.</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S19-1v-sPp">
                                         <rect key="frame" x="0.0" y="606" width="414" height="206"/>
                                         <subviews>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhW-H9-8La">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhW-H9-8La">
                                                 <rect key="frame" x="88.5" y="78" width="237" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="leading" contentVerticalAlignment="center" text="Original Sensor ID" placeholder="Original Sensor ID" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" background="UI_img_input box_write" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-GN-TH6">
+                                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="leading" contentVerticalAlignment="center" text="Original Sensor ID" placeholder="Original Sensor ID" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" background="UI_img_input box_write" translatesAutoresizingMaskIntoConstraints="NO" id="1rV-GN-TH6">
                                                         <rect key="frame" x="14" y="0.0" width="207" height="50"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2876,7 +2876,7 @@ Orange Electronic
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error" translatesAutoresizingMaskIntoConstraints="NO" id="nOf-Me-uen">
-                                                <rect key="frame" x="30" y="15" width="76" height="20"/>
+                                                <rect key="frame" x="30" y="15" width="38" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="Q6G-Td-ojY"/>
                                                 </constraints>
@@ -3097,7 +3097,7 @@ Orange Electronic
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLH-gq-gs3">
                                 <rect key="frame" x="0.0" y="623" width="414" height="189"/>
                                 <subviews>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGE-eC-A8R">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGE-eC-A8R">
                                         <rect key="frame" x="88.5" y="69.5" width="237" height="50"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="spare tire" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" background="UI_img_input box_fail" translatesAutoresizingMaskIntoConstraints="NO" id="rDT-VP-k9J">
@@ -3394,6 +3394,7 @@ Orange Electronic
                         <outlet property="condition" destination="LIF-jo-jlk" id="Pju-Sy-viG"/>
                         <outlet property="lft" destination="Ga7-wR-Cts" id="Umy-Vl-8dD"/>
                         <outlet property="menu" destination="803-Vt-Y7S" id="Sya-aW-wQp"/>
+                        <outlet property="spare" destination="dLH-gq-gs3" id="fol-hR-7rJ"/>
                         <outlet property="spi" destination="Rah-We-gb8" id="nze-EJ-QhC"/>
                         <outlet property="startbt" destination="8mA-pD-lSS" id="XSl-0S-Ice"/>
                         <outlet property="tit" destination="hff-cD-KDN" id="uyT-72-xlF"/>
@@ -4257,11 +4258,11 @@ from us with the subject “Reset your password”.</string>
         <image name="UI_img_input box_write" width="352" height="112"/>
         <image name="UI_img_wheel_n" width="112" height="112"/>
         <image name="UI_rectangle_n" width="336" height="96"/>
-        <image name="btn_ID copy_USB PAD_n" width="240" height="240"/>
+        <image name="btn_ID copy_USB PAD_n" width="120" height="120"/>
         <image name="btn_Language_normal" width="168" height="168"/>
         <image name="btn_My Favourite_n" width="360" height="360"/>
         <image name="btn_OBDII relearn_n" width="360" height="360"/>
-        <image name="btn_Online shopping_n" width="120" height="120"/>
+        <image name="btn_Online shopping_n" width="240" height="240"/>
         <image name="btn_Privacy policy_normal" width="168" height="168"/>
         <image name="btn_Update_normal" width="168" height="168"/>
         <image name="btn_favourite_n" width="360" height="360"/>

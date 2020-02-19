@@ -16,6 +16,8 @@ class Idcopy: UIViewController,UITextFieldDelegate {
     var idcount=8
     var s19="TO001"
     var Scan_or_Key=1
+    var tirecount=4
+    @IBOutlet var spare: UIView!
     @IBOutlet var KeyInlabel: UILabel!
     @IBOutlet var ScanLabel: UILabel!
     @IBOutlet var SpareTire: UIView!
@@ -62,7 +64,7 @@ class Idcopy: UIViewController,UITextFieldDelegate {
         Rft.attributedPlaceholder = NSAttributedString(string: "RF ID Number",attributes: placeholserAttributes)
         Lrt.attributedPlaceholder = NSAttributedString(string: "LR ID Number",attributes: placeholserAttributes)
         Rrt.attributedPlaceholder = NSAttributedString(string: "RR ID Number",attributes: placeholserAttributes)
-        Spt.attributedPlaceholder = NSAttributedString(string: "spare tire",attributes: placeholserAttributes)
+        Spt.attributedPlaceholder = NSAttributedString(string: "SP ID Number",attributes: placeholserAttributes)
         lft.delegate = self
         Rft.delegate = self
         Lrt.delegate = self
@@ -77,6 +79,7 @@ class Idcopy: UIViewController,UITextFieldDelegate {
         SelectText.text=SetLan.Setlan("Select")
         startbt.setTitle(SetLan.Setlan("START"), for: .normal)
         menu.setTitle(SetLan.Setlan("MENU"), for: .normal)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         
@@ -117,6 +120,7 @@ class Idcopy: UIViewController,UITextFieldDelegate {
         var wrf=Rft.text!
         var wlr=Lrt.text!
         var wrr=Rrt.text!
+        var spr=Spt.text!
         if(wlf.count != idcount){
             return
         }
@@ -130,12 +134,19 @@ class Idcopy: UIViewController,UITextFieldDelegate {
             return
         }
         self.act.LoadIng(SetLan.Setlan("Programming"))
+        var a=[String]()
         wlf=AddEmpty(wlf)
         wrf=AddEmpty(wrf)
         wlr=AddEmpty(wlr)
         wrr=AddEmpty(wrr)
+         a.append(wlf)
+         a.append(wrf)
+         a.append(wrr)
+         a.append(wlr)
+        if(!spr.isEmpty){
+         a.append(AddEmpty(spr))
+        }
         DispatchQueue.global().async {
-            let a=[wrr,wlr,wrf,wlf]
             let issucess=self.act.command.SetireId(a)
             DispatchQueue.main.async {
                 self.act.LoadingSuccess()
@@ -305,9 +316,10 @@ class Idcopy: UIViewController,UITextFieldDelegate {
                 let iid = sqlite3_column_text(statement,0)
                 if iid != nil{
                     let iids = String(cString: iid!)
+                    print("id\(iids)")
                     if(iids=="5"){
-                        SpareTire.isHidden=false
-                    }else{SpareTire.isHidden=true}
+                        spare.isHidden=false
+                    }else{spare.isHidden=true}
                 } }  }
     }
     func queryid(){

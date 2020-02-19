@@ -41,9 +41,9 @@ class Command {
             if(act.Rx.count == 52){
                 beans.success=true
                 beans.LF=act.Rx.sub(8..<16)
-                beans.LR=act.Rx.sub(16..<24)
-                beans.RF=act.Rx.sub(24..<32)
-                beans.RR=act.Rx.sub(32..<40)
+                beans.RF=act.Rx.sub(16..<24)
+                beans.RR=act.Rx.sub(24..<32)
+                beans.LR=act.Rx.sub(32..<40)
                 beans.SP=act.Rx.sub(40..<48)
                 return beans}
         }
@@ -157,12 +157,13 @@ self.act.LoadIng("\(SetLan.Setlan("Programming"))...\(Int(iw/Lw*100))%")
         return b
     }
     func SetireId(_ Id:[String])->Bool{
-        var i=1
+        var i=0
         act.sendData("60A200FFFFFFFFC20A",18)
         sleepmill(0.05)
+        var position=["4","1","2","3","5"]
         for var id in Id{
             id=AddEmpty(id)
-            act.sendData(addcheckbyte("60A20XidFF0A".replace("id",id).replace("X","\(i)")),0)
+act.sendData(addcheckbyte("60A20XidFF0A".replace("id",id).replace("X","\(position[i])")),0)
             i+=1
            sleepmill(0.05)
         }
